@@ -58,7 +58,8 @@ void OffroadAlert::refresh() {
   cleanStackedWidget(alerts_stack);
 
   std::vector<char> bytes = Params().read_db_bytes("UpdateAvailable");
-  updateAvailable = bytes.size() && bytes[0] == '1';
+  //updateAvailable = bytes.size() && bytes[0] == '1';
+  updateAvailable = false;
 
   QVBoxLayout *layout = new QVBoxLayout;
 

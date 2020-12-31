@@ -8,7 +8,7 @@ Ecu = car.CarParams.Ecu
 class SteerLimitParams:
   STEER_MAX = 1500
   STEER_DELTA_UP = 10       # 1.5s time to peak torque
-  STEER_DELTA_DOWN = 25     # always lower than 45 otherwise the Rav4 faults (Prius seems ok with 50)
+  STEER_DELTA_DOWN = 40     # always lower than 45 otherwise the Rav4 faults (Prius seems ok with 50)
   STEER_ERROR_MAX = 350     # max delta between torque cmd and torque motor
 
 class CAR:
@@ -39,7 +39,7 @@ class CAR:
   SIENNA = "TOYOTA SIENNA XLE 2018"
   LEXUS_IS = "LEXUS IS300 2018"
   LEXUS_CTH = "LEXUS CT 200H 2018"
-  RAV4H_TSS2 = "TOYOTA RAV4 HYBRID 2019"
+  RAV4H_TSS2 = "TOYOTA RAV4 HYBRID 2021"
   LEXUS_NXH = "LEXUS NX300H 2018"
   LEXUS_NX = "LEXUS NX300 2018"
 
