@@ -290,7 +290,7 @@ static void ui_draw_world(UIState *s) {
 static void ui_draw_vision_maxspeed(UIState *s) {
   char maxspeed_str[32];
   float maxspeed = s->scene.controls_state.getVCruise();
-  int maxspeed_calc = maxspeed * 0.6225 + 0.5;
+  int maxspeed_calc = maxspeed * 0.6225 * 1.03 + 0.5;
   if (s->is_metric) {
     maxspeed_calc = maxspeed + 0.5;
   }
