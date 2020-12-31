@@ -231,7 +231,7 @@ EVENTS: Dict[int, Dict[str, Union[Alert, Callable[[Any, messaging.SubMaster, boo
 
   EventName.startupMaster: {
     ET.PERMANENT: Alert(
-      "ps11818/openpilot: master-0.8.1",
+      "ps11918/openpilot: master-0.8.1",
       "Eyes open, Hands ready... but, don't forget to PRAY",
       AlertStatus.userPrompt, AlertSize.mid,
       Priority.LOWER, VisualAlert.none, AudibleAlert.none, 0., 0., 15.),
