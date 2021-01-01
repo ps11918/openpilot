@@ -130,8 +130,8 @@ class PathPlanner():
       elif self.lane_change_state == LaneChangeState.preLaneChange:
         if not one_blinker or below_lane_change_speed:
           self.lane_change_state = LaneChangeState.off
-        #elif torque_applied and not blindspot_detected:
-        elif not blindspot_detected:
+        elif torque_applied and not blindspot_detected:				#Nudge Required
+        #elif not blindspot_detected:						#Nudgeless
           self.lane_change_state = LaneChangeState.laneChangeStarting
 
       # starting
